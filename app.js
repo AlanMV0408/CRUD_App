@@ -1,3 +1,3 @@
-//Url de la api donde se almacenan los productos
-const API_URL = 'https://localhost:3000/products';
+//Url de la APIrest donde se almacenan los productos
+const API_URL = 'http://localhost:3000/products'; 
 
