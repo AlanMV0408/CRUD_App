@@ -65,7 +65,7 @@ productForm.addEventListener('submit', async (e) => {
                 headers: {
                     'Content-Type': 'application/json' //Especificar el tipo de contenido como JSON
                 },
-                body: JSON.stringify({id: newId, ...payload}) //Convertir el objeto payload a una cadena JSON con el nuevo ID
+                body: JSON.stringify({id: String(newId), ...payload}) //Convertir el objeto payload a una cadena JSON con el nuevo ID
             });
         }
 
