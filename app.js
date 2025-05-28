@@ -58,7 +58,7 @@ productForm.addEventListener('submit', async (e) => {
             const allProductsRes = await fetch(API_URL);
             const allProducts = await allProductsRes.json();
             //al tener la lista de productos, generar un nuevo ID
-            const newId = allProducts.length ? Math.floor(Math.max(...allProducts.map(p => Number(p.id))) + 1 ) : 1 ;
+            const newId = allProducts.length
         
             response = await fetch(API_URL, {
                 method: 'POST', //Método POST para crear un nuevo producto
